@@ -23,10 +23,11 @@ get_header(); ?>
    <div class="aboutCALSMission">
 	<div class="inner">
 		<div class="column">
-		<p>The Biology Major is designed for students who are interested in a broad exposure to the concepts and methodologies of the biological sciences, as well as those interested in a more specific sub-discipline. </p>
+        <!--
+		<p>Insert somethiing MERIT specific to float over image.</p>
+         -->
 
-
-<a href="biologymajor/about/" class="button">Learn more about the biology major</a>
+<a href="meritservices.education.wisc.edu" class="button">Learn more about MERIT Services</a>
 		</div>
 	</div>
 </div>

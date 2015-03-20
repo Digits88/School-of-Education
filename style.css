@@ -4222,8 +4222,8 @@ color: #B70101;
 }
 
 .aboutCALSMission {
-	background: #000 url("images/helix.jpg") no-repeat;
-	background-size: 100%;
+	background: #000 url("images/MERITslider1.jpg") no-repeat;
+	background-size: cover;
 	background-position: center center;
 	color: #fff;
 	text-shadow: 1px 1px 3px black;
