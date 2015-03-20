@@ -18,7 +18,7 @@
 	        <div class="copyright">
 	        	<img src="<?php echo get_template_directory_uri(); ?>/images/uwlogo_small.png" alt="University of Wisconsin Madison" />
 				<div class="uwaddress">
-					<h4>University of Wisconsin - Madison Biology Major</h4>
+					<h4>University of Wisconsin - School of Education</h4>
 					<!--<address>
 							<span>123 Street</span>
 							<span class="bullet_img">Madison WI</span>
@@ -28,7 +28,7 @@
 						<span>Phone: (111) 111-1111</span>
 						<span class="bullet_img">FAX: (111) 111-1111</span>
 					</div>-->
-	        		<div class="copyrightline">&copy; 2013. Board of Regents of the University of Wisconsin System.</div>
+	        		<div class="copyrightline">&copy; 2015. Board of Regents of the University of Wisconsin System.</div>
 				</div>
 	        </div>
 	        
