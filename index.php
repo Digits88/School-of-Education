@@ -23,7 +23,7 @@ get_header(); ?>
    <div class="aboutCALSMission">
 	<div class="inner">
 		<div class="column">
-		<p>Stewards of the School of Education’s Information Environment by providing services that enable discovery, access, design, and use of resources for teaching and learning, research, and outreach.</p>
+		<p>Stewards of the School of Education’s Information Environment providing services that enable discovery, access, design, and use of resources for teaching and learning, research, and outreach.</p>
 
 <a href="meritservices.education.wisc.edu" class="button">Learn more about MERIT Services</a>
 		</div>
