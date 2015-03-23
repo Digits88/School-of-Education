@@ -25,7 +25,7 @@ get_header(); ?>
 		<div class="column">
 		<p>Stewards of the School of Education’s Information Environment providing services that enable discovery, access, design, and use of resources for teaching and learning, research, and outreach.</p>
 
-<a href="meritservices.education.wisc.edu" class="button">Learn more about MERIT Services</a>
+<a href="http://meritservices.education.wisc.edu/" class="button">Learn more about MERIT Services</a>
 		</div>
 	</div>
 </div>
