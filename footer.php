@@ -33,7 +33,7 @@
 	        </div>
 	        
 	        <div class="navcornerleft"></div>
-	        <div class="navcornerright"></div>
+	        <div class="navcornerright">368 Teacher Education Building • (608) 263-4750</div> 
 	        <div class="clearfix"></div>
 		</div>
 			
