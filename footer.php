@@ -19,21 +19,21 @@
 	        	<img src="<?php echo get_template_directory_uri(); ?>/images/uwlogo_small.png" alt="University of Wisconsin Madison" />
 				<div class="uwaddress">
 					<h4>University of Wisconsin - School of Education</h4>
-					<!--<address>
-							<span>123 Street</span>
+					<address>
+							<span>MERIT • 368 Teacher Education Building</span>
 							<span class="bullet_img">Madison WI</span>
-							<span class="bullet_img">53719</span>
+							<span class="bullet_img">53706</span>
 					</address>
 					<div class="phone">
-						<span>Phone: (111) 111-1111</span>
-						<span class="bullet_img">FAX: (111) 111-1111</span>
-					</div>-->
-	        		<div class="copyrightline">&copy; 2015. Board of Regents of the University of Wisconsin System.</div>
+						<span>Phone: (608) 263-4750</span>
+						<!-- <span class="bullet_img"></span> -->
+					</div>
+	        		<div class="copyrightline">&copy; 2015.  Board of Regents of the University of Wisconsin System.</div>
 				</div>
 	        </div>
 	        
 	        <div class="navcornerleft"></div>
-	        <div class="navcornerright">368 Teacher Education Building • (608) 263-4750</div> 
+	        <div class="navcornerright"</div> 
 	        <div class="clearfix"></div>
 		</div>
 			
