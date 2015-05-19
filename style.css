@@ -70,7 +70,8 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------- */
 
 body {
-	padding: 0 2em;	
+	padding: 0 2em;
+	
 }
 #page {
 	margin: 0 auto;
