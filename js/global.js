@@ -136,7 +136,7 @@ $('.mobileMenu a').click(function(event){
 		setTimeout(function() {
 			//adds visible class
 			$(".subLevel1").addClass("visible");	
-			},300);
+			},500);
 		
 
 		//implement back link
