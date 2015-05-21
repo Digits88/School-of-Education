@@ -109,9 +109,8 @@ $(".mobileTrigger, .menuOverlay").click(function(e) {
  */
 function subMobileMenu(){
 
-
-	//SUB-LEVEL 1
-	$('.mobileMenu a').click(function(event){
+//SUB-LEVEL 1
+$('.mobileMenu a').click(function(event){
 		
 		//Create variable for current element
 		var elem = $(this);
@@ -152,8 +151,8 @@ function subMobileMenu(){
 
 		});
 
-			//SUB-LEVEL 2
-			$('.subLevel1 a').click(function(event){
+		//SUB-LEVEL 2
+		$('.subLevel1 a').click(function(event){
 		
 			//Create variable for current element
 			var elem = $(this);
@@ -196,8 +195,8 @@ function subMobileMenu(){
  			}
 
 
-				//SUB-LEVEL 3
-				$('.subLevel2 a').click(function(event){
+			//SUB-LEVEL 3
+			$('.subLevel2 a').click(function(event){
 		
 				//Create variable for current element
 				var elem = $(this);
@@ -238,13 +237,12 @@ function subMobileMenu(){
 
 					});
  				}
-				});
-
 			});
 
+		});
 
- 		}
-	});
+ 	}
+});
 
  }
 //subMobileMenu();
