@@ -8093,6 +8093,8 @@ border-radius: 3px;
 /************
 * menuMobile
 *************/
+
+
 .menu-item{
 	display:block;
 }
@@ -8237,7 +8239,8 @@ border-radius: 3px;
 	left: 16px;
 	z-index:5;
 	padding-right: 16px;
-	border-right: 1px solid rgba(255,255,255,0.3);		
+	/*border-right: 1px solid rgba(255,255,255,0.3);*/
+
 	
 }
 
@@ -8297,6 +8300,26 @@ border-radius: 3px;
   
 }
 .subLevel2.visible {
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+}
+
+.subLevel3{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: #444444;
+  -webkit-overflow-scrolling: touch;
+  transform: translate(-300px,0px);
+  -webkit-transform: translate(-300px,0px);
+  transition: 0.4s cubic-bezier(0.150, 0.325, 0.250, 1.195);
+  -webkit-transition: 0.4s cubic-bezier(0.150, 0.325, 0.250, 1.195);
+  visibility: visible;
+  
+}
+.subLevel3.visible {
   transform: translate(0,0);
   -webkit-transform: translate(0,0);
 }

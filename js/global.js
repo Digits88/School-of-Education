@@ -99,38 +99,11 @@ $(".mobileTrigger, .menuOverlay").click(function(e) {
 	$("#page").toggleClass("blur");
 }); 
 
-	
-/**
- * ----------------------------------------------------------------------------
- *
- *  Assign header menu controls
- *
- * ----------------------------------------------------------------------------
- */
- 
-	$(".youruwTrigger").click(function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		
-		$(".youruwmenu").toggleClass("visible");
-		
-	});
-	
-	$(".searchTrigger, .searchClose, .searchResultsOverlay").click(function(e) {
-		e.preventDefault();
-		
-		$(".searchUI").toggleClass("visible").attr("aria-hidden","false");
-		$("#page").toggleClass("blur");
-		$(".searchResultsOverlay").toggleClass("visible").attr("aria-hidden","false");
-		
-	});
-
- 
 
 /**
  * ----------------------------------------------------------------------------
  *
- *  SubMenu script
+ *  Sub Menu Logic
  *
  * ----------------------------------------------------------------------------
  */
@@ -164,7 +137,7 @@ function subMobileMenu(){
 		setTimeout(function() {
 			//adds visible class
 			$(".subLevel1").addClass("visible");	
-			},100);
+			},300);
 		
 
 		//implement back link
@@ -179,58 +152,99 @@ function subMobileMenu(){
 
 		});
 
-		//SUB-LEVEL 2
-		$('.subLevel1 a').click(function(event){
+			//SUB-LEVEL 2
+			$('.subLevel1 a').click(function(event){
 		
-		//Create variable for current element
-		var elem = $(this);
+			//Create variable for current element
+			var elem = $(this);
 
-		//Check if the parent container of div has children links
-		if ($(elem).parent().hasClass('page_item_has_children')){
-		event.preventDefault();
+			//Check if the parent container of div has children links
+			if ($(elem).parent().hasClass('page_item_has_children')){
+			event.preventDefault();
 		
-		//Grab submenu content and links
-		var subMenu = $(elem).next().html();
-		var elemText = $(elem).text() + " Overview";
-		var elemHref = $(elem).attr("href");
+			//Grab submenu content and links
+			var subMenu = $(elem).next().html();
+			var elemText = $(elem).text() + " Overview";
+			var elemHref = $(elem).attr("href");
 
-		//Creating a label for overview link and back link
-		var overviewLink = "<li class=menu-item><a href='"+elemHref+"'>"+elemText+"</a></li>";
-		var backLink = "<li class=menu-item><a href='#' class='backLevel1'>Back</a></li>";
+			//Creating a label for overview link and back link
+			var overviewLink = "<li class=menu-item><a href='"+elemHref+"'>"+elemText+"</a></li>";
+			var backLink = "<li class=menu-item><a href='#' class='backLevel1'>Back</a></li>";
 
-		//Adding sub menu divs ontop of mobile menu div
-		$(".subLevel1").append("<div class='subLevel2'></div>");
-		$(".subLevel2").append(subMenu).prepend(overviewLink).prepend(backLink);
+			//Adding sub menu divs ontop of mobile menu div
+			$(".subLevel1").append("<div class='subLevel2'></div>");
+			$(".subLevel2").append(subMenu).prepend(overviewLink).prepend(backLink);
 
-		//Delays the adding in sublevel for css transitions
-		setTimeout(function() {
-			//adds visible class
-			$(".subLevel2").addClass("visible");	
-			},100);
-		
-
-		//implement back link
-		$(".backLevel1").click(function(b) {
-			b.preventDefault();
-
-			$(".subLevel2").removeClass("visible");
-			//Delays the removal for sublevel for css transitions
+			//Delays the adding in sublevel for css transitions
 			setTimeout(function() {
-				$(".subLevel2").remove();
-			},300);
+				//adds visible class
+				$(".subLevel2").addClass("visible");	
+				},300);
+		
 
-		});
- 	}
+			//implement back link
+			$(".backLevel1").click(function(b) {
+				b.preventDefault();
+
+				$(".subLevel2").removeClass("visible");
+				//Delays the removal for sublevel for css transitions
+				setTimeout(function() {
+					$(".subLevel2").remove();
+				},300);
+
+			});
+ 			}
+
+
+				//SUB-LEVEL 3
+				$('.subLevel2 a').click(function(event){
+		
+				//Create variable for current element
+				var elem = $(this);
+
+				//Check if the parent container of div has children links
+				if ($(elem).parent().hasClass('page_item_has_children')){
+				event.preventDefault();
+		
+				//Grab submenu content and links
+				var subMenu = $(elem).next().html();
+				var elemText = $(elem).text() + " Overview";
+				var elemHref = $(elem).attr("href");
+
+				//Creating a label for overview link and back link
+				var overviewLink = "<li class=menu-item><a href='"+elemHref+"'>"+elemText+"</a></li>";
+				var backLink = "<li class=menu-item><a href='#' class='backLevel1'>Back</a></li>";
+
+				//Adding sub menu divs ontop of mobile menu div
+				$(".subLevel2").append("<div class='subLevel3'></div>");
+				$(".subLevel3").append(subMenu).prepend(overviewLink).prepend(backLink);
+
+				//Delays the adding in sublevel for css transitions
+				setTimeout(function() {
+					//adds visible class
+					$(".subLevel3").addClass("visible");	
+					},300);
+		
+
+				//implement back link
+				$(".backLevel1").click(function(b) {
+					b.preventDefault();
+
+					$(".subLevel3").removeClass("visible");
+					//Delays the removal for sublevel for css transitions
+					setTimeout(function() {
+						$(".subLevel3").remove();
+					},300);
+
+					});
+ 				}
+				});
+
+			});
+
+
+ 		}
 	});
-
-
- }
-});
-
-
-
-
-
 
  }
 //subMobileMenu();
