@@ -743,9 +743,9 @@ a.button:active {
 	float: left;
 	margin: 0 auto -1px;
 	width: 100%;
-	/*fixes loading glitch of access bar appearing
+	/*fixes loading glitch of access bar appearing*/
 	visibility:hidden;
-	position:absolute;*/
+	position:absolute;
 }
 
 #uwred #access {
