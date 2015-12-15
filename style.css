@@ -1124,7 +1124,7 @@ a.button:active {
 .comment-content h2 {
 	color: #777;
 	font-weight: 300;
-	margin: 0 0 .85em;
+	margin: 0 0 .80em;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
@@ -3834,7 +3834,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.1em;
 }
 
@@ -3847,6 +3847,7 @@ a,
 a code {
   color: #a60f0f;
   text-decoration: none;
+  font-weight: 700;
 }
 
 #uwred #page a, #uwred #page a code {
@@ -3879,8 +3880,8 @@ a code {
 
 a:hover,
 a:hover code { 
-  color: #694545; 
-  border-bottom: 1px dotted #694545;
+  color: #C90; 
+  border-bottom: 1px dashed #a60f0f;
 }
 
 #uwred a:hover, #uwred a:hover code {
@@ -8225,7 +8226,7 @@ border-radius: 3px;
 				
 .site-navigation-containter a:hover, a:focus {
 					background: $uwred;
-					color: rgba(255,255,255,0.8);
+					color: rgba(155,155,155,0.9);
 				}
 
 .mobileTrigger {
