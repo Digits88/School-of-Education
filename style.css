@@ -2404,6 +2404,13 @@ section.recent-posts .other-recent-posts li:after {
 .widget a:active {
 	text-decoration: underline;
 }
+div#em_widget-4 .previousa{
+	padding-top:10px;
+}
+div#em_widget-4 ul{
+	list-style: none;
+	padding: 0 18px;
+}
 
 /* Search Widget */
 .widget_search form {
