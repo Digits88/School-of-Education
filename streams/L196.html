@@ -1,0 +1,79 @@
+<!DOCTYPE html5>
+ 
+<html>
+	<head>
+		<title>Live Stream from Education L196</title> 
+		<table style="width: 100%">
+			<tr>
+				<td style="width: 78px"><a href="http://www.wisc.edu">
+				<img alt="UW Madison Logo" class="auto-style2" height="106" longdesc="UW Madison Logo" src="uwcrest_web_sm_shado.png" width="70"></a></td>
+				<td>
+				<h1 class="auto-style1">Live Stream From Education L196</h1>
+				</td>
+			</tr>
+		</table>
+
+		<script type='text/javascript'>
+			var isMobile = {
+					Android: function() {
+						return navigator.userAgent.match(/Android/i);
+					},
+					BlackBerry: function() {
+						return navigator.userAgent.match(/BlackBerry/i);
+					},
+					iOS: function() {
+						return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+					},
+					Windows: function() {
+						return navigator.userAgent.match(/IEMobile/i);
+					},
+					any: function() {
+						return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+					}
+				};
+			if ( isMobile.Android() || isMobile.iOS() ) {
+					document.location.href = "http://www2.fpm.wisc.edu/support/ClassroomStreams/educationl196_mobile.html";
+				}
+		</script>
+		
+		<style type="text/css">
+		body
+		 {
+		 background-color:transparent;
+		 margin: 0;
+		 padding: 0;
+		 } 		
+		.transparent {
+		zoom: 1;
+		}
+		.auto-style1 {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.auto-style2 {
+			border-width: 0;
+		}
+		</style>
+		<script type="text/javascript" src="https://www2.fpm.wisc.edu/support/JW/jwplayer.js"></script>
+
+		</head>
+		<body leftmargin="0" marginwidth="0" marginheight="0">
+		<div id="mediaplayer" class="transparent">
+			You need Flash to play this stream</div>
+			<script type="text/javascript">  
+			jwplayer('mediaplayer').setup({
+				'id': 'playerID',
+				'flashplayer': 'https://www2.fpm.wisc.edu/support/JW/player-licensed.swf',
+				'image': 'live_player.jpg',
+				'width': '640',
+				'height': '360',
+				'provider': 'rtmp',
+				'streamer': 'rtmp://webstream1.media.hslc.wisc.edu:80/campus/',
+				'file': 'education_l196',
+				'autostart': 'false',
+				'stretching': 'uniform'
+			});
+		</script>
+
+		</body>
+</html>
+ 
